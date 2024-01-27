@@ -66,12 +66,12 @@ const home = () => {
         url="https://rhtapps.redhat.com/verify?certId=230-163-446"
         desc="Red Hat Enterprise Linux 9, The credential is earned after successfully passing the Red Hat Certified System Administrator (RHCSA) Exam (EX200)."
         />
-        <Certficate
+        {/* <Certficate
         title="🪪 Socially-Card"
         url="https://charandevreddy.github.io/portfolio/"
         github="https://github.com/charandevreddy/portfolio"
         desc="A Simple Static website which contains your basic details and social links for quick access of all at one place"
-        />
+        /> */}
       </div>
       
 
