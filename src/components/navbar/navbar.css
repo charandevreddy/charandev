@@ -1,0 +1,121 @@
+.navbar{
+    display: flex;
+    /* flex-wrap: wrap; */
+    width: 75%;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right bottom, rgba(255,255,255,1),rgba(255,255,255,0.9));
+    padding: 15px 3.5%;
+    border-radius: 3.5rem;
+    transition: 0.3s;
+    position: sticky;
+    top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.navbar ul{
+    display: flex;
+    text-align: center;
+}
+.navbar li{
+    /* display: inline; */
+    margin: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    list-style: none;
+
+
+}
+.toggle-button{
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+.dark .navbar{
+    background: black;
+    color: #fff;
+}
+.active{
+    background: #ced8ff;
+    padding: 10px 1rem 10px 1rem;
+    
+    border-radius: 2rem;
+    
+}
+
+.dark .active{
+    background: #041130;
+    padding: 10px;
+    border-radius: 1rem;
+}
+
+.navbar .menu {
+    display: none;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.75rem;
+    /* padding-top: 0.5rem; */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+}
+
+.navbar .menu span {
+    height: 0.4rem;
+    width: 100%;
+    background-color: black;
+    border-radius: 0.2rem;
+}
+.dark .navbar .menu span {
+    background-color: white;
+}
+.side{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+@media (max-width:850px){
+    .navbar .menu{
+        display: flex;
+
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0.25rem;
+    }
+    .toggle-button{
+        position: absolute;
+        top: 1.5rem;
+        right: 5.5rem;
+    } 
+
+    .navbar ul.open {
+        display: flex;
+    }
+
+    .navbar ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar ul li a {
+        margin: 0.2rem 0.5rem;
+    }
+}
