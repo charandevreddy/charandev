@@ -45,8 +45,8 @@ const home = () => {
       />
       <Projectcard 
       title="🗃️ Personal Portfolio"
-      url="https://cookgenie.vercel.app/"
-      github="https://github.com/charandevreddy/Cookgenie"
+      url="https://charandev.vercel.app/"
+      github="https://github.com/charandevreddy/charandev"
       desc="For a thought of cooking something and a Question about what to cook, then Cookgenie would be the place to get instant recipes with your given requirements and conditions.
       Made using ReactJS, Tailwindcss and API's"
       />
